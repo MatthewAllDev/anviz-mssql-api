@@ -1,0 +1,19 @@
+services:
+  api:
+    build: .
+    ports:
+      - "${PORT:-8080}:${PORT:-8080}"
+    environment:
+      - DB_DSN_FILE=/run/secrets/db_dsn
+      - API_KEYS_FILE=/run/secrets/api_keys
+      - PORT=${PORT:-8080}
+    secrets:
+      - db_dsn
+      - api_keys
+    restart: unless-stopped
+
+secrets:
+  db_dsn:
+    file: ./secrets/db_dsn
+  api_keys:
+    file: ./secrets/api_keys

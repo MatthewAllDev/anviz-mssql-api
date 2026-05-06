@@ -1,0 +1,33 @@
+# Git
+.git
+.gitignore
+.agents
+.codex
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentation
+README.md
+
+# Environment files
+.env
+.env.example
+secrets
+api_keys*
+
+# Build artifacts
+anviz-mssql-api
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

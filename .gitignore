@@ -1,0 +1,7 @@
+.env
+secrets/
+.agents/
+.codex
+api_keys*
+anviz-mssql-api
+*.log
